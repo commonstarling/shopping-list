@@ -1,0 +1,43 @@
+html {
+	background-color: #336b73;
+}
+h1, h2 {
+	text-align: center;
+	font-family: sans-serif;
+	font-family: 'Comfortaa', cursive;
+
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 1em;
+}
+.input {
+	width: 15em;
+	background-color: #7db8c2;
+	border: 1px solid black;
+	height: 2em;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.5em;
+	border-radius: 5px;
+	padding-top: 1em;
+}
+.list {
+	list-style: none;
+	background-color: #f3bfd1;
+	border: 1px solid black;
+	width: 25em;
+	text-align: center;
+	margin: auto;
+	border-radius: 5px;
+}
+.list .items {
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+	list-style: none;
+	margin-left: -1em;
+}
