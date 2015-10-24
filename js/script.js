@@ -1,3 +1,5 @@
 $(document).ready(function() {
-	$(".input")
-})
+	$("form").submit(function(){
+		alert("submitted!");
+	});
+});

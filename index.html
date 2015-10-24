@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<link href='https://fonts.googleapis.com/css?family=Indie+Flower|Comfortaa:400,700,300' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Sheena's Shopping Sorter</title>
 </head>
@@ -11,7 +13,9 @@
 	<h2>Place items on the shopping list by typing them in the box below and hitting "enter."</h2>
 	<h2>Click the green buttons to check off completed items, and click the pink buttons to delete items.</h2>
 	<br>
-	<div class="input">What do you need to buy?</div>
+	<form class="entry">
+  		<input type="text" name="grocery" placeholder="What do you need to buy?">
+  	</form>
 	<br>
 	<div class="list">
 		<ul>
