@@ -1,4 +1,9 @@
-html {
+* {
+	box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+body {
 	background-image: url("../images/groceries.jpg");
 	background-size: 95%;
 	background-repeat: no-repeat;
@@ -17,11 +22,11 @@ h1 {
 h2 {
 	font-size: 1rem;
 }
-.entry input {
+input {
 	width: 25rem;
 	background-color: #ffffff;
-	border: none;
-	height: 2.5rem;
+	border: 1px solid black;
+	height: 3.5rem;
 	text-align: center;
 	display: block;
 	margin: 0 auto;
@@ -29,7 +34,7 @@ h2 {
 	font-size: 1.5rem;
 	border-radius: 5px;
 	padding-top: 1rem;
-	opacity: 0.9;
+	opacity: 0.8;
 }
 .list {
 	list-style: none;
@@ -58,9 +63,11 @@ h2 {
 	float: left;
 	margin-left: 40px;
 	margin-top: 13px;
+	box-shadow: 1px 1px black;
 }
 .list .items .add:hover {
 	background-color: darkgreen;
+	cursor: pointer;
 }
 .list .items .delete {
 	border: 1px solid black;
@@ -71,9 +78,11 @@ h2 {
 	float: right;
 	margin-right: 40px;
 	margin-top: 13px;
+	box-shadow: 1px 1px black;
 }
 .list .items .delete:hover {
 	background-color: firebrick;
+	cursor: pointer;
 }
 .reset {
 	width: 5rem;
@@ -86,4 +95,5 @@ h2 {
 }
 .reset:hover {
 	background-color: slategray;
+	cursor: pointer;
 }

@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	$("form").submit(function(){
-		alert("submitted!");
-	});
+	$("#task").keydown(function(e) {
+		if(e.keyCode == 13) {
+			alert("You hit enter");
+		}
+	})
 });
