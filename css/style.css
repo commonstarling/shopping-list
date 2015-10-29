@@ -5,7 +5,7 @@
 
 body {
 	background-image: url("../images/groceries.jpg");
-	background-size: 100%;
+	background-size: 175%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -46,7 +46,7 @@ input {
 	border-radius: 5px;
 	opacity: 0.8;
 }
-.list .items {
+.list .item {
 	text-align: center;
 	font-family: 'Indie Flower', cursive;
 	font-size: 2rem;
@@ -54,36 +54,39 @@ input {
 	margin-left: -1rem;
 	display: block;
 }
-.list .items .check {
+.check {
 	border: 1px solid black;
 	background-color: forestgreen;
 	border-radius: 100%;
 	width: 1rem;
 	height: 1rem;
 	float: left;
-	margin-left: 40px;
-	margin-top: 13px;
 	box-shadow: 1px 1px black;
+	margin-left: 60px;
+	margin-top: 13px;
+	margin-right: -70px;
 }
-.list .items .check:hover {
+.list .item .check:hover {
 	background-color: darkgreen;
 	cursor: pointer;
 }
 .checked-item {
-	color: blue;
+	color: gray;
+	text-decoration: line-through;
+	font-family: 'Indie Flower', cursive;
 }
-.list .items .delete {
+.delete {
 	border: 1px solid black;
 	background-color: red;
 	border-radius: 100%;
 	width: 1rem;
 	height: 1rem;
 	float: right;
-	margin-right: 40px;
-	margin-top: 13px;
 	box-shadow: 1px 1px black;
+	margin-right: 60px;
+	margin-top: -35px;
 }
-.list .items .delete:hover {
+.list .item .delete:hover {
 	background-color: firebrick;
 	cursor: pointer;
 }

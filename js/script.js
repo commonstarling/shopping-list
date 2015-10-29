@@ -1,7 +1,7 @@
 /*Function to add items*/
 function addItem() {
 	var itemValue = $('#task').val();
-	var row = $('<li><button class="check">&#x2713;</button><span class="item">' + itemValue + '</span><button class="delete">x</button></li>');
+	var row = $('<li><button class="check"></button><span class="item">' + itemValue + '</span><button class="delete"></button></li>');
 	$('.list').append(row);
 }	
 /*Function to check off items*/
@@ -17,6 +17,11 @@ function deleteItem() {
 /*Function to reset list*/
 function clearList() {
 	$('.list').empty();
+}
+
+/*Function to clear input after each item*/
+function resetForm() {
+	$('#task').val('');
 }
 
 $(document).ready(function() {
@@ -36,5 +41,6 @@ $(document).on('click', '.delete', deleteItem);
 $(document).on('keypress', function(key) {
         if (key.keyCode == 13) {
             addItem();
+            resetForm();
         } 
 });
