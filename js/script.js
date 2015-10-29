@@ -1,7 +1,40 @@
+/*Function to add items*/
+function addItem() {
+	var itemValue = $('#task').val();
+	var row = $('<li><button class="check">&#x2713;</button><span class="item">' + itemValue + '</span><button class="delete">x</button></li>');
+	$('.list').append(row);
+}	
+/*Function to check off items*/
+function checkItem() {
+	$(this).parent().toggleClass('checked-item');
+}
+
+/*Function to delete items*/
+function deleteItem() {
+	$(this).parent().remove();
+}
+
+/*Function to reset list*/
+function clearList() {
+	$('.list').empty();
+}
+
 $(document).ready(function() {
-	$("#task").keydown(function(e) {
-		if(e.keyCode == 13) {
-			alert("You hit enter");
-		}
-	})
+	/*on click of the add to list button id add-button action add item */
+	$('#add').on('click', addItem);
+	
+	
+	/*on click of the reset list button id startover action reset list */
+	$('.reset').on('click', clearList);
+
+});
+	/*On click check button, cross off the list item*/
+$(document).on('click', '.check', checkItem);
+	/*On click check button, delete list item*/
+$(document).on('click', '.delete', deleteItem);
+
+$(document).on('keypress', function(key) {
+        if (key.keyCode == 13) {
+            addItem();
+        } 
 });
